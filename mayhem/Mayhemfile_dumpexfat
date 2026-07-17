@@ -1,0 +1,9 @@
+project: savantenvs/exfat
+target: dumpexfat
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dumpexfat/testsuite
+
+cmds:
+  - cmd: /mayhem/dumpexfat @@
