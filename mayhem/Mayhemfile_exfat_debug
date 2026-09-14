@@ -1,0 +1,10 @@
+project: savantenvs/exfat
+target: exfat-debug-buggy-mhh-run-15
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/exfat-debug-buggy-mhh-run-15/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_exfat_debug
+    libfuzzer: true
